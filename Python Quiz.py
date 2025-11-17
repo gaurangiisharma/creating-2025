@@ -28,4 +28,21 @@ for question in questions:
         print("WRONG!")
         print(f"The correct answer is: {answers[question_num]}")
     question_num += 1
+percentage = score/len(questions)*100
+
+print("----------------------")
+print("       RESULTS        ")
+print("----------------------")
+
+print("answers: ", end="")
+for answer in answers:
+    print(answer, end=" ")
+print()
+
+print("guesses: ", end="")
+for guess in guesses:
+    print(guess, end=" ")
+print()
+
 print(f"\nYour final score is {score}/{len(questions)}")
+print(f"\nYour percentage is {percentage:.2f}%")
